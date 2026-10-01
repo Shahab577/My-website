@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Primary SEO — this is a confirmation page, not a content page.
+       It is kept out of the search index on purpose: it should only be
+       reached after a successful form submission. -->
+  <title>Thank You — Request Received | RapidPestHelp</title>
+  <meta name="description" content="Your pest control quote request has been received. A member of the RapidPestHelp team will contact you. Call +1-844-937-2204.">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="theme-color" content="#0c3b24">
+
+  <!-- ======================================================================
+       GOOGLE ADS TAG WILL BE INSERTED HERE
+       ---------------------------------------------------------------------
+       Paste the same Google tag (gtag.js) snippet used on index.html into
+       this exact location. It starts with
+       &lt;script async src="https://www.googletagmanager.com/gtag/js?id=AW-..."&gt;
+       followed by a small config script.
+
+       Use ONLY the real Google Ads tag ID from this client's account.
+       Never invent, guess or reuse an ID from another account.
+
+       The Google tag must be present here BEFORE the conversion event below,
+       otherwise the page-load conversion cannot fire.
+       ====================================================================== -->
+
+  <!-- ======================================================================
+       GOOGLE ADS CONVERSION EVENT WILL BE INSERTED HERE
+       ---------------------------------------------------------------------
+       THIS IS THE GOOGLE ADS CONVERSION PAGE (page-load conversion).
+
+       Once the conversion action has been created in Google Ads, paste the
+       event snippet it generates into this location, e.g.
+         <script>
+           gtag('event', 'conversion', {
+             'send_to': 'AW-XXXXXXXXX/XXXXXXXXXXXXXXXX'
+           });
+         </script>
+       The AW-… ID and label above are examples only — replace them with the
+       real values Google Ads gives you. Nothing is hard-coded today.
+
+       The dataLayer is already initialised on this page, and phone_click /
+       form_submission events are pushed by js/main.js, so no restructuring
+       is needed when tracking is added.
+       ====================================================================== -->
+
+  <!-- dataLayer bootstrap used by the Google tag / Google Tag Manager once installed -->
+  <script>window.dataLayer = window.dataLayer || [];</script>
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="RapidPestHelp">
+  <meta property="og:title" content="Thank You — Your Request Has Been Received | RapidPestHelp">
+  <meta property="og:description" content="Thanks for your pest control quote request. A member of the RapidPestHelp team will contact you.">
+  <!-- og:image / og:url: add full https:// URLs once the domain is live. -->
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="css/styles.css">
+
+  <!-- Site scripts (config first: it defines the form endpoint) -->
+  <script src="js/config.js" defer></script>
+  <script src="js/main.js" defer></script>
+</head>
+
+<body data-page="thank-you">
+
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <!-- Icon sprite -->
+  <svg style="position:absolute;width:0;height:0;overflow:hidden" aria-hidden="true" focusable="false">
+    <defs>
+      <symbol id="i-shield" viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></symbol>
+      <symbol id="i-phone" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></symbol>
+      <symbol id="i-check-circle" viewBox="0 0 24 24"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><path d="m22 4-10 10.01-3-3"/></symbol>
+      <symbol id="i-chat" viewBox="0 0 24 24"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></symbol>
+    </defs>
+  </svg>
+
+  <!-- =============================== HEADER ============================== -->
+  <header class="site-header">
+    <div class="container site-header__inner">
+      <a class="brand" href="./index.html">
+        <span class="brand__mark" aria-hidden="true"><svg class="icon"><use href="#i-shield"></use></svg></span>
+        <span>RapidPestHelp<small>Pest control for homes &amp; businesses</small></span>
+      </a>
+      <div class="header-cta">
+        <a class="header-phone" href="tel:+18449372204" data-cta-location="header">
+          <svg class="icon" aria-hidden="true"><use href="#i-phone"></use></svg>
+          +1-844-937-2204
+        </a>
+        <a class="btn btn--outline header-call-btn" href="tel:+18449372204" data-cta-location="header">
+          <svg class="icon" aria-hidden="true"><use href="#i-phone"></use></svg>
+          Call Now
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main id="main" class="thanks">
+    <div class="container">
+      <div class="thanks__card">
+
+        <div class="thanks__badge" aria-hidden="true">
+          <svg class="icon"><use href="#i-check-circle"></use></svg>
+        </div>
+
+        <h1>Thank You! Your Request Has Been Received.</h1>
+
+        <p>
+          Thanks for contacting RapidPestHelp. A member of our team will
+          contact you using the details you provided to talk through your pest
+          problem and your quote.
+        </p>
+
+        <div class="thanks__phone-box">
+          <span class="thanks__phone-label">Need to speak to us now?</span>
+          <a class="thanks__phone-number" href="tel:+18449372204" data-cta-location="thank_you">
+            <svg class="icon" aria-hidden="true"><use href="#i-phone"></use></svg>
+            +1-844-937-2204
+          </a>
+          <a class="btn btn--primary btn--block" href="tel:+18449372204" data-cta-location="thank_you">
+            <svg class="icon" aria-hidden="true"><use href="#i-phone"></use></svg>
+            Call Now
+          </a>
+        </div>
+
+        <div class="thanks__actions">
+          <a class="btn btn--outline" href="./index.html">
+            <svg class="icon" aria-hidden="true"><use href="#i-chat"></use></svg>
+            Back to Main Website
+          </a>
+        </div>
+
+        <p class="thanks__note">
+          If you have any questions in the meantime, call
+          <a href="tel:+18449372204" data-cta-location="thank_you_note">+1-844-937-2204</a>.
+        </p>
+
+      </div>
+    </div>
+  </main>
+
+  <!-- =============================== FOOTER =============================== -->
+  <footer class="site-footer">
+    <div class="container site-footer__inner">
+      <div><strong>RapidPestHelp</strong> — pest control for homes and businesses across the United States.</div>
+      <div class="site-footer__meta">
+        <a href="tel:+18449372204" data-cta-location="footer">+1-844-937-2204</a>
+        <span aria-hidden="true"> · </span>
+        © 2026 RapidPestHelp
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
